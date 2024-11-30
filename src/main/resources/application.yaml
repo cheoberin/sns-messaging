@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: sns-messaging
+
+
+cloud:
+  aws:
+    permissions:
+      access-key: ${AWS_ACCESS_KEY}
+      secret: ${AWS_SECRET_KEY}
+    region:
+      static: ${AWS_REGION}
+    sns:
+      topic: ${AWS_SNS_TOPIC}
